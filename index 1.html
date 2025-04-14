@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+            Hello World
+        </title>
+
+        <style>
+            .row {
+                width: 720px;
+                margin: 10px auto 10 px auto;
+            }
+
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: beige;">
+        <!-- <h1>
+            Hello World
+        </h1>
+        <h2>
+            This is my first website
+        </h2>
+        <p>
+            1111111111
+        </p>
+        <p>
+            191981011111111111 <br>
+            ewqewqewqewqewqewqewqewq<br>
+            okkokokokokokokoko
+        </p> -->
+        <div class="row">
+            <div class="image-container"><img id="image 1"src="images\image 1.jpg" onmousedown="this.src='images/image 4.jpg';" onmouseout="this.src='images/image 1.jpg'" width="150" height="150"/></div>
+            <div class="image-container"><img id="image 2"src="images\image 2.jpg" onmouseover="this.src='images/image 5.jpg';" onmouseout="this.src='images/image 2.jpg'" width="150" height="150"/></div>
+            <div class="image-container"><img id="image 3"src="images\image 3.jpg" onmousedown="this.src='images/image 6.jpg';" onmouseup="this.src='images/image 3.jpg'" width="150" height="150"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="image 1"src="images\image 1.jpg" onmousedown="this.src='images/image 4.jpg';" onmouseout="this.src='images/image 1.jpg'" width="150" height="150"/></div>
+            <div class="image-container"><img id="image 2"src="images\image 2.jpg" onmouseover="this.src='images/image 5.jpg';" onmouseout="this.src='images/image 2.jpg'" width="150" height="150"/></div>
+            <div class="image-container"><img id="image 3"src="images\image 3.jpg" onmousedown="this.src='images/image 6.jpg';" onmouseup="this.src='images/image 3.jpg'" width="150" height="150"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="image 1"src="images\image 1.jpg" onmousedown="this.src='images/image 4.jpg';" onmouseout="this.src='images/image 1.jpg'" width="150" height="150"/></div>
+            <div class="image-container"><img id="image 2"src="images\image 2.jpg" onmouseover="this.src='images/image 5.jpg';" onmouseout="this.src='images/image 2.jpg'" width="150" height="150"/></div>
+            <div class="image-container"><img id="image 3"src="images\image 3.jpg" onmousedown="this.src='images/image 6.jpg';" onmouseup="this.src='images/image 3.jpg'" width="150" height="150"/></div>
+        </div>
+        <script>
+            var sound1 = new buzz.sound("sounds/glitch1.mp3");
+            var sound2 = new buzz.sound("sounds/glitch2.mp3");
+            var sound3 = new buzz.sound("sounds/glitch3.mp3");
+            var sound4 = new buzz.sound("sounds/._glitch1.mp3");
+            var sound5 = new buzz.sound("sounds/._glitch2.mp3");
+            var sound6 = new buzz.sound("sounds/._glitch3.mp3");
+
+            window.onload = function() {
+                document.getElementById('image 1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('image 2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('image 3').addEventListener('click', function () {sound3.play();});
+
+                document.getElementById('image 1').addEventListener('mouseover', function () {sound4.play();});
+                document.getElementById('image 2').addEventListener('mouseover', function () {sound5.play();});
+                document.getElementById('image 3').addEventListener('mouseover', function () {sound6.play();});
+            };
+
+        </script>
+    </body>
+</html>
